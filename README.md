@@ -72,5 +72,6 @@
 - Create your own Animation
 
 # Reference
-- [https://tm22.in/google-speed-infographic](https://tm22.in/google-speed-infographic)
-- [https://tm22.in/crux](https://tm22.in/crux)
+- [Google speed infographic](https://tm22.in/google-speed-infographic)
+- [Crux Dashboard](https://tm22.in/crux)
+- [Webpack Boilerplate](https://tm22.in/webpack)

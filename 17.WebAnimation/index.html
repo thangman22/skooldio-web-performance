@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+</head>
+<body>
+    <div class="red-1 box"></div>
+    <div class="red-2 box"></div>
+</body>
+<style>
+    .box {
+        margin-bottom: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .red-1{
+        animation-name: scale;
+        animation-duration: 3s;
+    }
+    @keyframes scale {
+        0% { transform: none; }
+        10% { transform: scale3d(1.5,1.5,1.5) }
+        30% { transform: scale3d(1.9,1.9,1.9) }
+        100% { transform: scale3d(2,2,2) }
+    }
+</style>
+<script>
+    const scaleOptions = {
+        duration: 3000,
+    }
+    const scaleframes = [
+        { transform: 'none' },
+        { transform: 'scale(1.5)', offset: 0.1 },
+        { transform: 'scale(1.9)', offset: 0.3 },
+        { transform: 'scale(2)' }
+    ]
+    const red2 = document.querySelector('.red-2')
+    red2.animate(scaleframes, scaleOptions)
+</script>
+</html>
